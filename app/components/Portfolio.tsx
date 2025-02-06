@@ -6,10 +6,11 @@ const Portfolio = () => {
     const [activeSection, setActiveSection] = useState('home');
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const { scrollYProgress } = useScroll();
+    const isBrowser = typeof window !== "undefined";
 
     // Handle mouse movement for interactive effects
     useEffect(() => {
-        const handleMouseMove = (e: any) => {
+        const handleMouseMove = (e: { clientX: number, clientY: number }) => {
             setMousePosition({ x: e.clientX, y: e.clientY });
         };
         window.addEventListener('mousemove', handleMouseMove);
@@ -122,7 +123,7 @@ const Portfolio = () => {
                 style={gridStyle}
             >
                 {/* Animated tech circles */}
-                {[...Array(15)].map((_, i) => (
+                {isBrowser && [...Array(15)].map((_, i) => (
                     <motion.div
                         key={i}
                         className="absolute rounded-full border border-cyan-500 opacity-20"
