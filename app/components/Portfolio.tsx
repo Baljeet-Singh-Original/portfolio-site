@@ -259,15 +259,15 @@ const Portfolio = () => {
                                 <ul className="space-y-2 text-gray-400">
                                     <li>✓ Full Stack Development</li>
                                     <li>✓ Mobile App Development</li>
-                                    <li>✓ UI/UX Design</li>
                                     <li>✓ Cloud Architecture</li>
+                                    <li>✓ Third Party Integrations</li>
                                 </ul>
                             </div>
                             <div>
                                 <h3 className="text-xl font-bold text-cyan-400 mb-4">Tech Stack</h3>
                                 <ul className="space-y-2 text-gray-400">
                                     <li>✓ MERN Stack</li>
-                                    <li>✓ Flutter & React Native</li>
+                                    <li>✓ Flutter</li>
                                     <li>✓ AWS & Firebase</li>
                                     <li>✓ Docker & Kubernetes</li>
                                 </ul>
